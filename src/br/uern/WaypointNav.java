@@ -22,7 +22,7 @@ public class WaypointNav {
 		PilotProps pp = new PilotProps();
 		pp.loadPersistentValues();
 		float RAIO = Float.parseFloat(pp.getProperty(PilotProps.KEY_WHEELDIAMETER, "2.10")); //0.021 -- 4.32 -- 28000
-		float EIXO = Float.parseFloat(pp.getProperty(PilotProps.KEY_TRACKWIDTH, "140")); //140mm 16.35
+		float EIXO = Float.parseFloat(pp.getProperty(PilotProps.KEY_TRACKWIDTH, "14.0")); //140mm 16.35
 		RegulatedMotor leftMotor = PilotProps.getMotor(pp.getProperty(PilotProps.KEY_LEFTMOTOR, "A"));
 		RegulatedMotor rightMotor = PilotProps.getMotor(pp.getProperty(PilotProps.KEY_RIGHTMOTOR, "C"));
 		boolean reverse = Boolean.parseBoolean(pp.getProperty(PilotProps.KEY_REVERSE, "true"));
