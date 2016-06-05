@@ -32,7 +32,7 @@ public class WaypointNav {
 
 		DifferentialPilot pilot = new DifferentialPilot(RAIO, EIXO, leftMotor, rightMotor, reverse);
 		Navigator nav = new Navigator(pilot);
-
+		/*
 		while (st.hasMoreTokens()) {
 			dados.add(st.nextToken());
 		}
@@ -43,7 +43,8 @@ public class WaypointNav {
 			y = Double.parseDouble(dados.get(i+1));
 			nav.addWaypoint(new Waypoint(x,y));
 		}
-
+		*/
+		nav.addWaypoint(new Waypoint(0,30));
 		nav.followPath();
 		System.out.println("Any button to halt");
 		Button.waitForAnyPress();
