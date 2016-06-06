@@ -30,6 +30,9 @@ public class WaypointNav {
 		System.out.println("start");
 		Button.waitForAnyPress();
 
+		leftMotor.setSpeed(360);
+		rightMotor.setSpeed(360);
+
 		DifferentialPilot pilot = new DifferentialPilot(RAIO, EIXO, leftMotor, rightMotor, reverse);
 		Navigator nav = new Navigator(pilot);
 		/*
